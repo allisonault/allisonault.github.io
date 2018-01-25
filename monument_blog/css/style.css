@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Raleway:400,600');
+
+/* ----------------------------------------
+Base Styles
+------------------------------------------- */
+body {
+	font-family: "raleway";
+	color: #44545E;
+	font-weight: 600;
+	text-align: center;
+	margin: 0 auto;
+}
+
+/* how does div .wrapper work? Remove max-width and there is still default space and
+padding doesn't work. Using fixed pixels and it doesn't center and isn't responsive,
+but with the percentage the spacing on the right is weird as the browser size changes.
+Ask about grey text after colons - when enclosing with quotes, turns green.
+But then it breaks the code. */
+
+.wrapper {
+	max-width: 75%;
+	padding-right: 100px;
+	padding-left: 100px;
+}
+
+header {
+	width: 100%;
+	background-image: url("images/blog_header_bg.jpg");
+	background-color: #ffffff
+	background-size: cover;
+}
+
+/* Padding above navigation links */
+nav {
+	margin-top: 20px;
+}
+
+/* Navigation link styling */
+nav a {
+	text-transform: uppercase;
+	color: #7B98AA;
+	font-size: 16px;
+	text-decoration: none;
+	padding-left: 72px;
+	padding-right: 72px;
+}
+
+/* Spacing above and below page title */
+h1 {
+	margin-top: 80px;
+	margin-bottom: 80px;
+}
+
+/* Page title */
+h1 a {
+	text-transform: uppercase;
+	font-size: 37px;
+	color: #44545E;
+	text-decoration: none;
+	letter-spacing: 15px;
+}
+
+/* Post date */
+h2 {
+	text-transform: uppercase;
+	font-size: 23px;
+	text-align: left;
+	margin-bottom: 40px;
+}
+
+/* Post title */
+h3 {
+	font-size: 18px;
+	text-align: left;
+}
+
+p {
+	text-align: left;
+	font-weight: 400;
+	font-size: 15px;
+}
+
+/* Fixed for responsive images */
+img {
+	max-width: 100%;
+}
+
+/* About Us section --- start */
+aside {
+text-align: left;
+margin-top: 80px;
+}
+
+aside img {
+	margin-top: 40px;
+}
+
+aside h3 {
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 18px;
+	margin-top: 40px;
+}
+
+aside p {
+	font-family: "lato";
+	font-weight: 400;
+	font-size: 15px;
+}
+
+aside ul {
+		padding-left: 20px;
+}
+
+aside li {
+	line-height: 1.7;
+}
+
+aside a {
+	font-weight: 400;
+	font-size: 15px;
+	text-decoration: none;
+	color: lightblue;
+}
+/* About Us section --- end */
+
+
+/* Footer background and font styling */
+footer {
+	background-color: #CDF3F6;
+	font-weight: 600;
+	font-size: 15px;
+	text-transform: uppercase;
+	padding: 20px;
+	margin-top: 40px;
+}
+
+/* Social links */
+footer p {
+	font-family: lato;
+	font-weight: 400;
+	font-size: 15px;
+	text-align: center;
+	text-transform: capitalize;
+}
+
+/* Copyright */
+footer a {
+	font-weight: 600;
+	text-decoration: none;
+	color: #44545E;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+/* Footer line break */
+hr {
+	height: 1px;
+	background-color: #44545E;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
