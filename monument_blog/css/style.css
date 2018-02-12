@@ -9,6 +9,7 @@ body {
 	font-weight: 600;
 	text-align: center;
 	margin: 0 auto;
+	-webkit-font-smoothing: antialiased;
 }
 
 /* how does div .wrapper work? Remove max-width and there is still default space and
@@ -25,6 +26,7 @@ But then it breaks the code. */
 	padding-left: 100px;
 }
 
+/* Background Image */
 header {
 	width: 100%;
 	background-image: url("../images/blog_header_bg.jpg");
@@ -92,8 +94,9 @@ h3 {
 }
 
 p {
+	font-family: "lato";
 	text-align: left;
-	font-weight: 400;
+	font-weight: 200;
 	font-size: 15px;
 	line-height: 1.4;
 }
@@ -180,11 +183,12 @@ input[type="submit"] {
 	letter-spacing: 1px;
 }
 
-
 /* Social icon links and Copyright */
 .social-icons a {
 	padding-left: 15px;
 	padding-right: 15px;
+}
+
 }
 
 footer p {
