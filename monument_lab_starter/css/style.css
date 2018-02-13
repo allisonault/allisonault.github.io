@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,600|Lato:400');
+/* Add a link to GOOGLE FONTS LINK at the top! THis should be the first line of your stylesheet.*/
+
+/* ----------------------------------------
+Base Styles
+------------------------------------------- */
+/* Spacing around page between header and footer */
+.wrapper {
+	margin-right: auto;
+	margin-left: auto;
+
+	max-width: 960px:none;
+
+	padding-right: 10px;
+	padding-left: 10px;
+}
+/* Note: Makes sure that padding and the border are included in the width for each element. */
+/* Don't add anything else under the * selector! */
+* {
+	box-sizing: border-box;
+}
+
+/*Note: fix so that images will scale with their containers. We'll chat about this more when we cover responsive design*/
+img {
+	max-width: 100%;
+	padding: 10px;
+}
+
+body {
+	margin: 0 auto;
+	text-align: center;
+	color: #44545E;
+	-webkit-font-smoothing: antialiased;
+}
+
+/* Navigation remains visible as user scrolls down the page */
+.sticky-nav {
+	background-color: #ffffff;
+	position: sticky;
+	top: 0px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	z-index: 9999;
+}
+
+/* Navigation links styling */
+nav a {
+	font-family: "Raleway";
+	font-weight: 600;
+	font-size: 16px;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #7B98AA;
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+/* Link hover color turns to pink */
+a:hover {
+	color: pink;
+}
+
+/* Hamburger - hidden from website until 500px media query */
+.hamburger {
+	display: none;
+}
+
+/* Header background image */
+header {
+	width: 100%;
+	background-image: url("../images/home_header_bg.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-color: #ffffff;
+	margin-bottom: 100px;
+}
+
+/* Heading fonts and styling */
+h1, h2, h3 {
+	font-family: "Raleway";
+	text-transform: uppercase;
+}
+
+/* Page title styling */
+h1 {
+	font-size: 37px;
+	font-weight: 600;
+	letter-spacing: .7em;
+	color: #ffffff;
+	padding-top: 200px;
+}
+
+h2 {
+	font-size: 23px;
+	font-weight: 600;
+}
+
+/* Page subtitle styling */
+h2.subtitle {
+	color: #ffffff;
+	padding-bottom: 200px;
+}
+
+h3 {
+	font-size: 18px;
+	font-weight: 600;
+	padding-bottom: 30px;
+}
+
+p {
+	font-family: "Lato";
+	font-size: 15px;
+	font-weight: 400;
+}
+
+button {
+	font-family: "Raleway"
+	border: 1px;
+	border-color: #44545E;
+	background-color: transparent;
+	padding: 5px 20px;
+	margin-top: 10px;
+	text-transform: uppercase;
+}
+
+/* Button hover effect */
+button:hover {
+	color: #ffffff;
+	background-color: #44545E;
+}
+
+/* Articles */
+.article-preview {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-column-gap: 20px;
+}
+
+/* About */
+.about {
+	background-color: #CDF3F6;
+	padding: 100px;
+	margin-left: -10px;
+	margin-right: -10px;
+	margin-top: 50px;
+	margin-bottom: 100px;
+}
+
+/* Gallery */
+.gallery {
+	padding-left: 100px;
+	padding-right: 100px;
+}
+
+#photos {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* Gallery photo overlay styling for hover effect */
+.overlay {
+ opacity: 1;
+ width: 100%;
+ height: auto;
+ transition: .5s ease;
+
+}
+
+/* When mouse hovers over gallery photo the overlay appears */
+.overlay:hover {
+	opacity: 0.3;
+}
+
+/* Footer */
+footer	{
+	background-color: #CDF3F6;
+	padding-top: 50px;
+	padding-bottom: 5px;
+	margin-top: 20px;
+}
+
+/* Social icons */
+.social-icons {
+	margin-bottom: 20px;
+}
+
+.social-icons i {
+	padding-left: 10px;
+	padding-right: 10px;
+	color: #44545E;
+}
+
+.social-icons a:hover{
+	color: pink;
+}
+
+/* Email input form */
+input[type="text"] {
+	padding: 5px 40px;
+	margin-right: 20px;
+	border: none;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+hr {
+	height: 1px;
+	border: 1px;
+	background-color: #44545E;
+	border-color: #44545E;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+/* Copyright */
+.copyright {
+	color: #44545E;
+	font-size: 15px;
+	font-family: "lato";
+}
+
+/* Screen size breaks at 660, and 500 */
+
+/* Styling for broswer size 500 to 660 pixels */
+@media screen and (max-width: 660px) {
+
+/* H3 font size shrinks from 18px to 14px */
+	h3 {
+		font-size: 14px;
+	}
+	.gallery {
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+}
+
+
+/* Styling for broswer size 500 pixels or less */
+@media screen and (max-width: 500px) {
+
+/* Header height gets smaller */
+	h1 {
+		padding-top: 100px;
+	}
+	h2.subtitle {
+		padding-bottom: 100px;
+	}
+	
+/* Articles change from 3 columns to 1 column */
+	.article-preview {
+		grid-template-columns: 1fr;
+	}
+
+/* Page title condenses */
+	h1 {
+		letter-spacing: .4em;
+	}
+/* Photos in gallery change from 3 columns to 1 column
+and padding decreases from 100px to 50px */
+	.gallery {
+		padding-left: 50px;
+		padding-right: 50px;
+}
+	#photos {
+		grid-template-columns: 1fr;
+	}
+
+/* About section padding decreases from 100px to 50px */
+	.about {
+		padding: 50px;
+	}
+
+/* Hamburger menu appears and navigation links disappear from nav bar */
+	nav a {
+		display: none;
+	}
+
+	.hamburger {
+		display: inline;
+		position: absolute;
+		bottom: 5px;
+		left: 20px;
+	}
+
+}
