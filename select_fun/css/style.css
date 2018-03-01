@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #000;
+  font-size: 12px;
+  line-height: 1.2;
+  font-family: 'Lato', Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+}
+
+h3 {
+  color: red;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Center the container */
+
+header {
+  padding: 30px;
+  background-color: #FCEE21;
+}
+
+#boxes {
+  margin: 20px;
+}
+
+#boxes section {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+section article,
+section div {
+  width: 24%;
+  border: 2px solid #29ABE2;
+  padding: 10px;
+}
+
+.boring article,
+.boring div {
+  border: 2px solid #8E8E8E;
+}
+
+button {
+  background-color: #29ABE2;
+  border: none;
+  display: inline-block;
+  margin: 30px 20px 20px;
+  font-size: 15px;
+  padding: 8px 20px;
+  cursor: pointer;
+  color: white;
+  outline: none;
+}
+
+#party-time {
+  background-color: #FF31A0;
+}
+
+footer {
+  padding: 20px;
+  background-color: #FCEE21;
+  display: none;
+}
+
+.selected {
+  border: 2px solid #FF31A0;
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+.snazzy {
+  background-color: #9bebff;
+  color: #2fafaf;
+}
+
+.fun {
+  font-weight: bold;
+  color: #c43fe2;
+}
