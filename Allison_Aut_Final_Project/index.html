@@ -4,9 +4,12 @@
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Your Title Here</title>
+  <title>See Eyewear</title>
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <!-- Link for FontAwesome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
@@ -16,24 +19,33 @@
   <!-- Start of header section -->
   <header>
 
-    <!-- Top navigation text & icon links -->
+    <!-- Top navigation text & icon links and logo -->
     <nav>
-      <li class="left-nav">
-        <ul><a href="#">Eyewear</a></ul>
-        <ul><a href="#">Locations</a></ul>
-        <ul><a href="#">Concept</a></ul>
-      </li>
-      <li class="right-nav">
-        <ul><a href="#">My Account</a></ul>
-        <ul><a href="#"><img src="img/" alt="" height="" width=""></a></ul>
-        <ul><a href="#"><img src="img/" alt="" height="" width=""></a></ul>
-        <ul><a href="#"><img src="img/" alt="" height="" width=""></a></ul>
-      </li>
-    </nav>
-    <!-- End of navigation links -->
+      <!-- Navigation links on left -->
+      <div id="left-nav">
+        <ul>
+          <li><a href="#">Eyewear</a></li>
+          <li><a href="#">Locations</a></li>
+          <li><a href="#">Concept</a></li>
+        </ul>
+      </div>
 
-    <!-- Logo centered in top navitation -->
-    <a href=""><img src="img/" alt="">
+      <!-- Logo centered in top navitation -->
+      <div id="center-nav">
+        <a href=""><img class="logo" src="img/logos/eyewear-logo-white.png" alt="">
+      </div>
+
+      <!-- Navigation links and icons on right -->
+      <div id="right-nav">
+        <ul id="nav-links">
+          <li><a href="#">My Account</a></li>
+          <li><a href="#"><img src="img/" alt="" height="" width=""></a></li>
+          <li><a href="#"><img src="img/" alt="" height="" width=""></a></li>
+          <li><a href="#"><img src="img/" alt="" height="" width=""></a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- End of navigation -->
 
   </header>
   <!-- End of header section -->
@@ -45,26 +57,34 @@
     <section id="hero">
       <!-- Start of left side of hero section -->
       <div id="hero-left">
-        <img scr="" alt="">
-        <h2>10 Days</h2>
-        <h4>Try 5 pairs of eyewaer at home for FREE <!-- should I use inline styling to make this uppercase? --> for 10 days.</h4>
+        <!-- Section text -->
+          <div id="hero-left-callout" class="section-callout">
+            <h2 class="home">10 Days</h2>
+            <h4 class="home">Try 5 pairs of eyewear at home for FREE <!-- should I use inline styling to make this uppercase? --> for 10 days.</h4>
+          </div>
         <!-- Try It button -->
-        <a class="button-medium-orange" href="">Try It</a>
+        <button class="button button-medium-orange" href="">Try It</button>
       </div>
       <!-- End of left side of hero section -->
       <!-- Start of right side of hero section -->
       <div id="hero-right">
         <!-- Start of right top of hero section -->
         <div id="hero-top-right">
-          <h1>or</h1>
-          <h3>Try 5</h3>
-          <h5>for</h5>
+          <div class="hero-right-text">
+            <h3>Try 5</h3>
+            <h5>for</h5>
+            <h3>10 Days</h3>
+            <h1 class="or">or</h1>
+          </div>
         </div>
         <!-- End of right top of hero section -->
         <!-- Start of right bottom of hero section -->
-        <div id="hero-top-left">
-          <h3>Buy</h3>
-          <h4>it</h4>
+        <div id="hero-bottom-right">
+          <div id="bottom-right-angle" class="hero-right-text">
+            <h3 class="home">Buy</h3>
+            <h4 class="home">it</h4>
+            <h3 class="home">Today</h3>
+          </div>
         </div>
         <!-- End of right bottom of hero section -->
       </div>
@@ -73,22 +93,28 @@
     <!-- End of top hero section -->
 
     <!-- Start of middle section -->
-    <section class="middle">
-      <img src="../img/">
-      <h2>Trendy</h2>
-      <h4>Oversized</h4>
+    <section id="middle">
+      <!-- Section text -->
+        <div id="middle-callout" class="section-callout">
+          <h2>Trendy</h2>
+          <h4 class="oversized">Oversized</h4>
+        </div>
       <!-- Shop Now button -->
-      <a class="button-medium-orange" href="">Shop Now</a>
+      <button id="middle-button" class="button button-medium-orange" href="">Shop Now</button>
     </section>
     <!-- End of middle section -->
 
     <!-- Start of bottom section -->
-    <section class="middle">
-      <img src="../img/">
-      <h2>Two</h2>
-      <h2>Toned</h2>
-      <!-- Shop Now button -->
-      <a class="button-medium-orange" href="">Shop Now</a>
+    <section id="bottom">
+      <div id="bottom-background">
+      <!-- Section text -->
+        <div class="section-callout">
+          <h2 class="home">Two</h2>
+          <h2 class="home">Toned</h2>
+        </div>
+        <!-- Shop Now button -->
+        <button class="button button-medium-orange" href="">Shop Now</button>
+      </div>
     </section>
     <!-- End of bottom section -->
 
@@ -97,8 +123,8 @@
     <!-- Start of footer section -->
     <footer>
       <!-- Start of left side of footer -->
-      <div class="footer-left">
-        <div class="footer-left-column1">
+      <div id="footer-left">
+        <div id="footer-left-column1">
           <h5>About</h5>
           <h6>Jobs</h6>
           <h6>Craftsmanship</h6>
@@ -109,50 +135,75 @@
           <h6>Sitemap</h6>
         </div>
 
-        <div class="footer-left-column2">
-          <h5>My Account</h5>
-          <h6>Login/Register</h6>
-          <h6>My Account</h6>
-          <h6>My Order History</h6>
-          <h6>My Shopping Cart</h6>
-          <h5>Customer Service</h5>
-          <h6>Contact Info</h6>
-          <h6>Returns</h6>
-          <h6>Shipping</h6>
-          <h6>Faq's</h6>
-          <h6>Safe Shopping Guarantee</h6>
-          <h6>Secure Shopping</h6>
+        <div id="footer-left-column2">
+          <div id="footer-row-1">
+            <h5>My Account</h5>
+            <h6>Login/Register</h6>
+            <h6>My Account</h6>
+            <h6>My Order History</h6>
+            <h6>My Shopping Cart</h6>
+          </div>
+
+          <div id=footer-row-2>
+            <h5>Customer Service</h5>
+            <h6>Contact Info</h6>
+            <h6>Returns</h6>
+            <h6>Shipping</h6>
+            <h6>Faq's</h6>
+            <h6>Safe Shopping Guarantee</h6>
+            <h6>Secure Shopping</h6>
+          </div>
         </div>
 
       </div>
       <!-- End of left side of footer -->
 
       <!-- Start of right side of footer -->
-      <div class="footer-right">
+      <div id="footer-right">
         <h3 class="footer-h3">Get News & Discounts</h3>
 
         <!-- Start of email capture form -->
         <form>
-          <p class="email-address">Email Address</p>
-          <input type="text"><br>
-          <input type="submit" value="Sign Up" class="button-small-orange">
+          <p id="email-address">Email Address</p>
+          <input class="email-field" type="text"><br>
+          <input type="submit" class="button-small-orange" value="Sign Up" class="button-small-orange">
         </form>
         <!-- End of email capture form -->
 
       </div>
       <!-- End of right side of footer -->
     </footer>
-      <<!-- End of of footer -->
+    <!-- End of of footer -->
 
+    <!-- Start of bottom bar -->
+    <div id="bottom-bar">
 
+      <!-- Start of copyright -->
+      <div id="bottom-bar-left">
+        <h5 id="copyright">© Eyewear. All Rights Reserved<h5>
+      </div>
+      <!-- End of copyright -->
 
+      <!-- Start of social icons -->
+      <div id="bottom-bar-right">
+        <ul id="social-icons">
+          <li><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></a></i></li>
+          <li><a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></a></i></li>
+        </ul>
+      </div>
+      <!-- End of social icons -->
+    </div>
+    <!-- End of bottom bar -->
 
   <!-- HINT: Need to link to another page? Create a file with an html extension in your main project folder. -->
   <!-- Then link to it using an anchor. for example: <a href="blog.html">Blog</a> -->
 
 
-
+<!-- JAVASCRIPT -->
   <script src="js/jquery-1.12.0.min.js"></script>
+
   <script src="js/main.js"></script>
 </body>
 </html>
