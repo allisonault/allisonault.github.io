@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css?family=Arapey|Lobster|Karla:400,700');
+
+/* Base Styles */
+
+body {
+  font-family: "Karla";
+  color: #323232;
+  font-weight: 400;
+  text-align: left;
+
+/* Removes spacing from around the page */
+  margin: 0 auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+.wrapper {
+  display: grid;
+}
+
+header {
+  width: 100%;
+  background-color: #679B9C;
+  padding-top: 20px;
+}
+
+nav {
+  margin-top: 20px;
+}
+
+.left-nav {
+  display: inline-block;
+}
+
+.right-nav {
+  display: inline-block;
+}
+
+nav.logo {
+  text-align: center;
+}

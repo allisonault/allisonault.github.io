@@ -1,0 +1,429 @@
+@import url('https://fonts.googleapis.com/css?family=Arapey|Dancing+Script|Karla:400,700');
+/* --------------------------------------------------------------------------
+Base styles:
+----------------------------------------------------------------------------- */
+/* Fix to include padding and border in the total width for each element */
+* {
+  box-sizing: border-box;
+}
+
+/* Fix for responsive images */
+img {
+  max-width: 100%;
+}
+
+/* ------------ Base Styles ------------- */
+
+body {
+  font-family: "Karla";
+  color: #323232;
+  text-align: left;
+  /* Removes spacing from around the page */
+    margin: 0 auto;
+    -webkit-font-smoothing: antialiased;
+  }
+
+h1.or {
+  font-family: 'Dancing Script';
+  font-size: 144px;
+  line-height: 1;
+  position: absolute;
+  bottom: -24px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  text-align: center;
+  -ms-transform: rotate(45deg);
+  -ms-transform-origin: 20% 40%;
+  -webkit-transform: rotate(45deg);
+  -webkit-transform-origin: 20% 40%;
+  transform: rotate(-25deg);
+  transform-origin: 50% 80%;
+  z-index: 900;
+}
+
+h2 {
+  font-family: 'Arapey';
+  font-size: 48px;
+  margin: 0;
+  letter-spacing: 0.0525em;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-family: 'Arapey';
+  font-size: 36px;
+  margin: 0;
+  letter-spacing: 0.0525em;
+}
+
+footer h3.footer-h3 {
+  font-size: 24px;
+}
+
+h3 .search-item {
+
+}
+
+h3 .page-item {
+
+}
+
+h3.footer-h3 {
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+
+h4 {
+  font-size: 32px;
+  font-weight: 400;
+  margin: 0;
+}
+
+h5 {
+  font-size: 20px;
+  margin: 0;
+}
+
+h6 {
+  font-size: 12px;
+}
+
+.home {
+  color: #F0EDE3;
+}
+
+.oversized {
+  text-transform: uppercase;
+  font-size: 36px;
+  letter-spacing: -.03em;
+}
+
+a {
+  font-size: 18px;
+}
+
+/* -------------- Start button styling ------------- */
+.button {
+  color: #FFFFFF;
+  background-color: #EC984C;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.button:hover {
+  border: 2px solid #FFFFFF;
+  background: rgba(236, 152, 76, 0.7)
+}
+.button-medium-orange {
+  padding: 10px 60px;
+  margin: 10px 0;
+  font-size: 32px;
+}
+
+.button-small-orange {
+  padding: 10px 40px;
+  margin: 10px 0;
+  font-size: 20px;
+}
+
+/* -------------- End button styling ------------- */
+
+.wrapper {
+  display: grid;
+}
+
+/* -------------- Start of navigation ------------- */
+
+/* Adds background color, height, and alignment to nav */
+header {
+  position: sticky;
+  top: 0px;
+  z-index: 9999999;
+  width: 100%;
+  height: 80px;
+  background-color: #679B9C;
+}
+
+/* Adds space above and below nav links */
+nav {
+  height: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* Aligns nav links to the left within div */
+div#left-nav {
+  width: 33%;
+}
+
+/* Center aligns logo within div */
+div#center-nav {
+  width: 33%;
+  text-align: center;
+}
+
+/* Aligns nav links and icons to the right within div*/
+div#right-nav {
+  width: 33%;
+  text-align: right;
+}
+
+/* Removes bullets from nav links */
+ul#nav-links {
+  list-style-type: none;
+}
+
+/* Puts nav links on one line and adds space between them */
+nav li {
+  text-transform: uppercase;
+  display: inline;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+/* Removes default link styling */
+nav a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+/* Logo */
+img.logo {
+  width: 100px;
+}
+
+/* -------------- End of navigation ------------- */
+
+/* -------------- Start of top section ------------- */
+
+section#hero {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  width: 100%;
+}
+
+section#hero #hero-left {
+  background-image: url("../img/allef-vinicius-189080.jpg");
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #F0EDE3;
+  width: 100%;
+  height: 100%;
+  padding-left: 40px;
+}
+
+#hero-left #hero-left-callout {
+  width: 30%;
+  max-width: 300px;
+}
+
+section#hero #hero-right {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+section#hero #hero-right #hero-top-right {
+  background-color: #A2D2D3;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  position: relative;
+}
+
+section#hero #hero-right #hero-bottom-right {
+  background-color: #5B549A;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transform: skewY(-5deg);
+  transform-origin: 0;
+}
+
+section#hero #hero-right #hero-bottom-right #bottom-right-angle {
+  transform: skewY(5deg);
+  transform-origin: 0;
+}
+
+/* -------------- End of top section ------------- */
+
+/* -------------- Start of middle section ------------- */
+
+section#middle {
+  background-image: url("../img/pete-bellis-199853.jpg");
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #B5C9FE;
+  height: 800px;
+  width: 100%;
+  padding-left: 120px;
+  padding-right: 120px;
+  height: 600px;
+}
+
+/* Moves section text to left */
+#middle #middle-callout {
+  text-align: right;
+}
+
+/* Moves section button to left */
+#middle #middle-button {
+  float: right;
+}
+
+/* -------------- End of middle section ------------- */
+
+/* -------------- Start of bottom section ------------- */
+
+section#bottom {
+  background-color: #5B549A;
+  transform: skewY(-5deg);
+  transform-origin: 0;
+}
+
+#bottom #bottom-background {
+  background-image: url("../img/bewakoof-com-official-215985.jpg");
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: 0 40%;
+  background-repeat: no-repeat;
+  height: 600px;
+  width: 100%;
+  padding-left: 120px;
+  padding-right: 120px;
+  transform: skewY(5deg);
+  transform-origin: 0;
+}
+
+
+/* -------------- End of bottom section ------------- */
+
+/* All section callout text placement */
+div.section-callout {
+  padding-top: 200px;
+}
+
+/* Hero top right section text placement */
+div.hero-right-text {
+  margin: 100px;
+}
+
+/* -------------- Start of top footer section ------------- */
+
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+}
+
+footer #footer-left {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #323232;
+  height: 100%;
+  width: 100%;
+  padding: 60px;
+}
+#footer-left h5, #footer-left h6 {
+  color: #BDBDBD;
+  text-transform: uppercase;
+}
+
+#footer-left h5 {
+  margin-bottom: 20px;
+}
+
+#footer-left h6 {
+  margin-bottom: 5px;
+  margin-top: 0;
+}
+
+#footer-left-column2 {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+#footer-row-2 {
+  margin-top: 0px;
+}
+
+footer #footer-right {
+  background-color: #A2D2D3;
+  height: 100%;
+  width: 100%;
+  padding: 60px;
+  text-align: center;
+}
+
+#footer-right .email-address {
+  text-align: left;
+}
+
+input.email-field {
+  width: 80%;
+  height: 40px;
+}
+
+
+/* -------------- End of footer section ------------- */
+
+/* -------------- Start of top bottom bar ------------- */
+
+div#bottom-bar {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #323232;
+  border-top: solid 1px #BDBDBD;
+  height: 100px;
+  width: 100%;
+  padding: 0 40px;
+}
+
+#bottom-bar-left {
+    align-self: center;
+}
+
+#bottom-bar-left h5#copyright {
+  text-align: left;
+  text-transform: uppercase;
+  color: #BDBDBD;
+  font-weight: 400;
+}
+
+div#bottom-bar-right {
+  align-self: center;
+}
+
+#bottom-bar-right ul#social-icons {
+  align-self: center;
+  text-align: right;
+}
+
+ul#social-icons li {
+  display: inline;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+ul#social-icons .fa {
+  color: #BDBDBD;
+  font-size: 1.2em;
+}
+
+#social-icons .fa:hover {
+  color: #f4f4f4;
+}
+
+/* -------------- End of top bottom bar ------------- */
